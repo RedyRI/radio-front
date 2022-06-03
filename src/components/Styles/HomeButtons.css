@@ -1,0 +1,17 @@
+.Home_buttons > a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.Home_buttons > a > img {
+  width: 100%;
+}
+
+.Home_buttons {
+  width: 120px;
+  height: auto;  
+  position: fixed;
+  right: 15px;
+  bottom: 85px;
+}

@@ -1,0 +1,12 @@
+.Oncesesenta {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+}
+
+.Oncesesenta_logo {
+  width: 800px;
+}

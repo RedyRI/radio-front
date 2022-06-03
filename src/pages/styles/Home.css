@@ -1,0 +1,9 @@
+.Home {
+  background-color: black;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../../assets/images/logoEPA.png');
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}

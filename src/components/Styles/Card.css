@@ -1,0 +1,21 @@
+.Card {
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.Card_play {
+  width: 250px;
+  height: 250px;
+  background-color: coral;
+  display: none;
+}
+
+.Card_img {
+  width: 30vw;
+  height: 30vw;
+}

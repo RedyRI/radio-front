@@ -1,0 +1,22 @@
+.Header {
+  height: 50px;
+  display: flex;
+}
+.Header_cont {
+  width: 100vw !important;
+  background-color: black;
+}
+.Header_logo {
+  width: 50%;
+}
+
+.Header_logo-img img {
+  width: 50px;
+}
+
+.Header_searchBar {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

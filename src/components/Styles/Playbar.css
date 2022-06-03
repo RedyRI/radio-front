@@ -1,0 +1,165 @@
+.Playbar {
+  width: 100vw !important;
+  height: 60px;
+  background-color: #eeeff1;
+  display: flex;
+  padding: 0;
+}
+
+.Playbar_info, .Playbar_controls {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+.Playbar_info-image {
+  height: 100%;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Playbar_info-image > img {
+  width: 55px;
+}
+.Playbar_info-songname {
+  color: black;
+  height: 100%;
+  width: calc(100% - 65px);
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: center;
+}
+
+.Playbar_info-songname > h6{
+  margin: 0;
+}
+
+.Playbar_info-songname > span {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.Playbar_controls {
+  display: flex;
+}
+
+
+.Playbar_controls-volume {
+  width: 150px;
+  height: 100%;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+.Playbar_controls-volume > input {
+  width: 100%;
+  cursor: pointer;
+  color: yellow;
+}
+
+.Playbar_controls-playbtn {
+  width: calc(100% - 150px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Playbar_controls-playbtn > img {
+  width: 35px;
+  display: block;
+  cursor: pointer;
+}
+
+.Playbar_controls-playbtn > img:active {
+  transform: scale(0.9);
+}
+
+/* estilizar imput de tipo range */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.inputDiv {
+  width: 250px;
+  margin: 100px auto;
+  position: relative;
+}
+
+input[type='range'] {
+  display: block;
+  width: 100%;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #eeeff1;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #777;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type=range]::-ms-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: HotPink
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: black;
+} 
+
+#etiqueta {
+  margin-left: 5px;
+}

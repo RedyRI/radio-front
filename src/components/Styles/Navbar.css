@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+.Navbar {
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: #d7d8dc;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -210px;
+}
+
+.Navbar.active {
+  animation: show 0.5s ease forwards;
+}
+
+.Navbar.inactive {
+  animation: hide 0.5s ease forwards;
+}
+
+
+.Navbar__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 210px;
+  display: block;
+}
+
+.Navbar__menu-item {
+  display: block;
+}
+
+.Navbar__menu-item-link {
+  width: 100;
+  padding: 10px 12px;
+  display: block;
+  color: #515151;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.1s ease;
+}
+
+.Navbar__menu-item-link:hover {
+  color: #d7d8dc;
+  background-color: #515151; 
+}
+
+.Navbar_options {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Navbar_options-menu, .Navbar_options-settings {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Navbar_options-menu > img, .Navbar_options-settings > img {
+  width: 25px;
+}
+
+.Navbar_options-menu:active , .Navbar_options-settings:active {
+  transform: scale(0.9);
+}
+.Navbar_options-menu:hover, .Navbar_options-settings:hover {
+  filter: invert(0.5);
+}
+@keyframes show {
+  0% {
+    left: -210px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes hide {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -210px;
+  }
+}
