@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.RadioPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.RadioPage_logo {
+  margin-top: 80px;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RadioPage_logo.oncesesenta {
+  position: absolute;
+  bottom: 60px;
+  width: 50%;
+  left:50%;
+  align-items: flex-end;
+  transform: translate(-50%, 0);
+}
+
+.RadioPage_logo > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.RadioPage_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.RadioPage_playbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

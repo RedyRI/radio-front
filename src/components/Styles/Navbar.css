@@ -9,16 +9,17 @@
   position: absolute;
   top: 0;
   left: -210px;
+  transition: left 0.3s ease;
+  cursor: pointer;
 }
 
-.Navbar.active {
+.Navbar_options-menu:hover > .Navbar {
   animation: show 0.5s ease forwards;
 }
 
-.Navbar.inactive {
-  animation: hide 0.5s ease forwards;
+.Navbar:hover {
+  left: 0 !important;
 }
-
 
 .Navbar__menu {
   list-style: none;

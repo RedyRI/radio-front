@@ -2,20 +2,52 @@
   width: 175px;
   border-radius: 20px;
   background-color: white;
+  
 }
 
+.SearchBar_input {
+  position: relative;
+}
 .SearchBar_input > input {
   background-color: transparent;
   border: none;
-  outline: none;
+  outline: none;  
   font-size: 0.9rem;
   padding: 4px 0 4px 12px;
   font-weight: lighter;
   font-family:'Oswald', sans-serif;
 }
 
+
 .SearchBar_input > img {
   width: 18px;
   opacity: 0.5;
   padding: 0 2px 5px 2px;
+}
+
+.SearchBar_list {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.SearchBar_list-shadow {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: red;
+}
+
+.SearchBar_list::-webkit-scrollbar {
+  display: none;
+}
+.SearchBar_input:hover > .SearchBar_list {
+  display: block;
 }

@@ -7,10 +7,16 @@ export class HomeButtons extends Component {
   render() {
     return (
       <div className="Home_buttons">
-        <a href="/">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.touch.apppandafm&hl=es-419"
+          target="_blank"
+        >
           <img src={playstore} alt="imagen de playstore de google" />
         </a>
-        <a href="/">
+        <a
+          href="https://apps.apple.com/us/app/epa-fm/id1617706817"
+          target="_blank"
+        >
           <img src={appstore} alt="imagen de appstore de apple" />
         </a>
       </div>
